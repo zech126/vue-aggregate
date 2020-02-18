@@ -1,0 +1,68 @@
+{
+  "name": "zech126-aggregate",
+  "version": "2.1.5",
+  "description": "An item Vue.js component.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/aggregate.common.js",
+  "types": "types.d.ts",
+  "files": [
+    "dist",
+    "types.d.ts"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "release": "node scripts/release.js",
+    "lint": "cross-env NODE_ENV=production vue-cli-service lint",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "build:report": "cross-env NODE_ENV=production REPORT= rollup -c",
+    "docs:serve": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test:unit": "vue-cli-service test:unit",
+    "test:unit:watch": "vue-cli-service test:unit --watch --notify --notifyMode change",
+    "test:unit:cover": "vue-cli-service test:unit --coverage"
+  },
+  "author": "zech126 <751674443@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "element-ui": "^2.13.0",
+    "fast-deep-equal": "^2.0.1",
+    "throttle-debounce": "^2.1.0",
+    "vue-virtual-scroll-list": "^1.2.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.5",
+    "@vue/cli-plugin-eslint": "^4.0.5",
+    "@vue/cli-plugin-unit-jest": "^4.0.5",
+    "@vue/cli-service": "^4.0.5",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "autoprefixer": "^9.6.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "core-js": "^3.3.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "execa": "^1.0.0",
+    "inquirer": "^6.2.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.23.1",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-less": "^1.1.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.3",
+    "rollup-plugin-visualizer": "^2.6.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "semver": "^5.6.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.1.0"
+  }
+}
