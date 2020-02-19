@@ -1,6 +1,6 @@
 /**
  * @preserve
- * aggregate v2.1.5
+ * aggregate v1.0.1
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :

@@ -1,6 +1,6 @@
 /**
  * @preserve
- * aggregate v2.1.5
+ * aggregate v1.0.1
  */
 'use strict';
 

@@ -1,6 +1,6 @@
 {
   "name": "zech126-aggregate",
-  "version": "2.1.5",
+  "version": "1.0.1",
   "description": "An item Vue.js component.",
   "publishConfig": {
     "access": "public"
