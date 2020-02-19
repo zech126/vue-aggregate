@@ -10,7 +10,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    repo: 'zech126-aggregate',
+    repo: '@zech126/aggregate',
     docsDir: 'docs',
     locales: {
       '/': {

@@ -6,7 +6,7 @@
 
 ``` bash
 # 安装
-npm install zech126-aggregate -S
+npm install @zech126/aggregate -S
 
 # install dependencies
 npm install

@@ -1,5 +1,5 @@
 {
-  "name": "zech126-aggregate",
+  "name": "@zech126/aggregate",
   "version": "1.0.1",
   "description": "An item Vue.js component.",
   "publishConfig": {
