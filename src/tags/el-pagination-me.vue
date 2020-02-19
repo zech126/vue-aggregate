@@ -127,6 +127,20 @@ export default {
         pageSize: this.myPageSize
       }
       this.$emit('onChange', option)
+    },
+    fitWidth(option) {
+      const clientWidth = document.documentElement.clientWidth
+      const model =
+        clientWidth >= 1920
+          ? 'xl'
+          : clientWidth >= 1200
+          ? 'lg'
+          : clientWidth >= 992
+          ? 'md'
+          : clientWidth >= 768
+          ? 'sm'
+          : 'xs'
+      return option[model]
     }
   },
   components: {

@@ -1,6 +1,6 @@
 /**
  * @preserve
- * aggregate v1.0.2
+ * aggregate v1.0.3
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -403,6 +403,20 @@
           pageSize: this.myPageSize
         };
         this.$emit('onChange', option);
+      },
+      fitWidth: function fitWidth(option) {
+        var clientWidth = document.documentElement.clientWidth;
+        var model =
+          clientWidth >= 1920
+            ? 'xl'
+            : clientWidth >= 1200
+            ? 'lg'
+            : clientWidth >= 992
+            ? 'md'
+            : clientWidth >= 768
+            ? 'sm'
+            : 'xs';
+        return option[model]
       }
     },
     components: {
@@ -420,11 +434,11 @@
     /* style */
     var __vue_inject_styles__$1 = function (inject) {
       if (!inject) { return }
-      inject("data-v-8efc6d28_0", { source: "#pagination .pageContainer[data-v-8efc6d28]{height:62px}#pagination .pageContainer .page-info h2[data-v-8efc6d28]{margin-left:34px}#pagination .pageContainer .page-control[data-v-8efc6d28]{margin-right:-35px}#pagination .pageContainer .page-info h2[data-v-8efc6d28]{margin-bottom:11px;font-size:14px;font-weight:400;line-height:20px;color:#9ca6b5}", map: undefined, media: undefined });
+      inject("data-v-c54112e2_0", { source: "#pagination .pageContainer[data-v-c54112e2]{height:62px}#pagination .pageContainer .page-info h2[data-v-c54112e2]{margin-left:34px}#pagination .pageContainer .page-control[data-v-c54112e2]{margin-right:-35px}#pagination .pageContainer .page-info h2[data-v-c54112e2]{margin-bottom:11px;font-size:14px;font-weight:400;line-height:20px;color:#9ca6b5}", map: undefined, media: undefined });
 
     };
     /* scoped */
-    var __vue_scope_id__$1 = "data-v-8efc6d28";
+    var __vue_scope_id__$1 = "data-v-c54112e2";
     /* module identifier */
     var __vue_module_identifier__$1 = undefined;
     /* functional template */
