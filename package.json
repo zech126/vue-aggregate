@@ -1,6 +1,6 @@
 {
   "name": "@zech126/aggregate",
-  "version": "1.0.1.1",
+  "version": "1.0.2",
   "description": "An item Vue.js component.",
   "publishConfig": {
     "access": "public"
