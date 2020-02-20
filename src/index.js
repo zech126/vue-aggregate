@@ -1,6 +1,3 @@
-// import Vue from 'vue'
-// import common from './utils/common.js'
-import test from './test/test.vue'
 import elPaginationMe from './tags/el-pagination-me.vue'
 import elInputMe from './tags/el-input-me.vue'
 import elAutocompleteMe from './tags/el-Autocomplete-Me.vue'
@@ -23,12 +20,6 @@ import elSubMenuMe from './tags/el-submenu-me.vue'
 import elTreeMe from './tags/el-tree-me.vue'
 import elFoldMe from './tags/el-fold-me.vue'
 
-// common 应该放到每个组件内，不应该放到 vue 原型链上
-// Vue.prototype.$common = common
-
-test.install = function(Vue) {
-  Vue.component(test.name, test)
-}
 elPaginationMe.install = function(Vue) {
   Vue.component(elPaginationMe.name, elPaginationMe)
 }
@@ -79,7 +70,6 @@ elFoldMe.install = function(Vue) {
 }
 
 // export default {
-//   test,
 //   elPaginationMe,
 //   elInputMe,
 //   elAutocompleteMe,
@@ -93,13 +83,12 @@ elFoldMe.install = function(Vue) {
 //   elSubMenuMe,
 //   // editorViewMe,
 //   // editorMe,
-//   elUploadMe,
+//   // elUploadMe,
 //   elTreeMe,
 //   elFoldMe
 // }
 
 export {
-  test,
   elPaginationMe,
   elInputMe,
   elAutocompleteMe,
